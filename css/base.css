@@ -155,9 +155,11 @@ main {
 
 .content--top {
 	padding: 1.5em 2em 1.5em 1.5em;
-	justify-content: flex-start;
 	min-height: 0;
 	position: relative;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* Header */
@@ -288,5 +290,12 @@ a.demo--current {
 	}
 	.demo {
 		margin: 0 0.5em;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.content--top {
+	    flex-wrap: wrap;
+    justify-content: center;
 	}
 }
